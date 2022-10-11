@@ -1,0 +1,8 @@
+sftp:
+    image: atmoz/sftp
+    container_name: CONTAINER_NAME
+    volumes:
+        - /HOST/PATH:/home/USERNAME/upload
+    ports:
+        - "HOST_PORT:22"
+    command: USERNAME:PASSWORD:UNIX_USER_ID(ex:1000)
